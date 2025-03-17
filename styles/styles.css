@@ -1,7 +1,12 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Press+Start+2P&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Big Shoulders", sans-serif;
 }
 
 body {
@@ -14,19 +19,6 @@ body {
   padding: 20px;
   font-family: Arial, sans-serif;
   position: relative;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.06;
-  z-index: -1;
-  pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
 header{
@@ -83,20 +75,86 @@ main{
 #bigbox{
   font-size: 22px;
   line-height: 1.6;
+  position: relative;
+  border-top: solid 3px;
+  padding-top: 30px;
+  top: 20px;
+  line-height: 1.6;
+}
+
+#projects{
+  position: relative;
+  bottom: 25px;
+}
+
+#projects h2{
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 #projects-box{
-  border-top: solid 3px;
+  border-top: none 3px;
   display: flex;
   flex-direction: row;
+  gap: 40px;
 }
 
-.project-2{
+#projects-box h3{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 10px
+}
+
+.project-2::{
+  content: "";
   border-left: solid;
-  border-right: solid;
   padding: 5px;
+}
+
+.project-2::after{
+  
 }
 
 footer{
   padding: 30px;
 }
+
+footer .footer-content{
+  position: relative;
+  top: 20px;
+}
+
+footer .footer-content p{
+  color: white;
+}
+
+footer .footer-content p:hover{
+  color: white;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-content: center;
+}
+
+.social-links a img{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
